@@ -7,42 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="container">
         <div class="nav-left">
-            <div class="item-left">Home
+            <div class="item-left home">Home
                 <hr>
             </div>
-            <div class="item-left">Service
+            <div class="item-left dp-none">Service
                 <hr>
             </div>
-            <div class="item-left">News
+            <div class="item-left dp-none">News
                 <hr>
             </div>
-            <div class="item-left">Blog
+            <div class="item-left dp-none">Blog
                 <hr>
             </div>
-            <div class="item-left">Contact
+            <div class="item-left dp-none">Contact
                 <hr>
+            </div>
+            <div class="icon" onclick={menu()}>
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="menu-mobile">
+                <div class="item-left">Service
+                    <hr>
+                </div>
+                <div class="item-left">News
+                    <hr>
+                </div>
+                <div class="item-left">Blog
+                    <hr>
+                </div>
+                <div class="item-left">Contact
+                    <hr>
+                </div>
             </div>
         </div>
         <div class="nav-right">
             <div class="content">
-                <div class="banner">
-                    <img src="https://www.designevo.com/res/templates/thumb_small/simple-black-and-white-font-style.webp"
-                        alt="">
-                </div>
-                <div class="banner bg2">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam eius alias quibusdam et,
-                        facilis quia velit distinctio perspiciatis temporibus aut iste provident earum veniam quos,
-                        accusantium magni, odio laudantium ut voluptatibus delectus quis voluptates dicta quae! Esse,
-                        atque iusto! Nam illo autem distinctio repellendus reprehenderit quidem sunt unde tenetur nobis.
-                        Consequatur enim aliquid facilis.
-                    </p>
+                <div class="banner2">
+                    <div class="banner">
+                        <img src="https://www.designevo.com/res/templates/thumb_small/simple-black-and-white-font-style.webp"
+                            alt="">
+                    </div>
+                    <div class="banner bg2">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. iste provident earum veniam quos,
+                            accusantium magni, odio laudantium ut voluptatibus delectus quis voluptates dicta quae!
+                            Esse,
+                            atque iusto! Nam illo autem distinctio repellendus reprehenderit quidem sunt unde tenetur
+                            nobis.
+                            Consequatur enim aliquid facilis.
+                        </p>
+                    </div>
                 </div>
                 <div class="contents">
                     <div class="card">
@@ -59,10 +80,9 @@
                                         consectetur.</span>
                                     veritatis id velit impedit</span> molestiae facere quos assumenda soluta nulla?
                                 Reprehenderit
-                                praesentium voluptates saepe numquam dignissimos sapiente, tempora, excepturi maxime aliquid
-                                architecto id quis.? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, libero
-                                vitae illo debitis ad veritatis, repellendus ullam harum recusandae doloremque, quas
-                                consectetur. Sed, nulla quo? Nam inventore ab iure similique?</p>
+                                praesentium voluptates saepe numquam dignissimos sapiente, tempora, excepturi maxime
+                                aliquid
+                                architecto id quis.? Lorem ipsum dolor sit amet consectetur adipisicing elit. ?</p>
                         </div>
                     </div>
                     <div class="card">
@@ -79,10 +99,10 @@
                                         consectetur.</span>
                                     veritatis id velit impedit</span> molestiae facere quos assumenda soluta nulla?
                                 Reprehenderit
-                                praesentium voluptates saepe numquam dignissimos sapiente, tempora, excepturi maxime aliquid
-                                architecto id quis.? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, libero
-                                vitae illo debitis ad veritatis, repellendus ullam harum recusandae doloremque, quas
-                                consectetur. Sed, nulla quo? Nam inventore ab iure similique?</p>
+                                praesentium voluptates saepe numquam dignissimos sapiente, tempora, excepturi maxime
+                                aliquid
+                                architecto id quis.? Lorem ipsum dolor sit amet consectetur adipisicing elit. similique?
+                            </p>
                         </div>
                     </div>
                     <div class="card">
@@ -99,13 +119,12 @@
                                         consectetur.</span>
                                     veritatis id velit impedit</span> molestiae facere quos assumenda soluta nulla?
                                 Reprehenderit
-                                praesentium voluptates saepe numquam dignissimos sapiente, tempora, excepturi maxime aliquid
-                                architecto id quis.? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, libero
-                                vitae illo debitis ad veritatis, repellendus ullam harum recusandae doloremque, quas
-                                consectetur. Sed, nulla quo? Nam inventore ab iure similique?</p>
+                                praesentium voluptates saepe numquam dignissimos sapiente, tempora, excepturi maxime
+                                aliquid
+                                architecto id quis.? Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="footer">
@@ -115,5 +134,23 @@
         </div>
     </div>
 </body>
+<script>
+    let i = 2;
+
+    function menu() {
+        let icon = document.querySelector(".menu-mobile")
+
+        if (i % 2 == 0) {
+
+            icon.setAttribute('style', "display:block")
+            i += 1
+
+        } else {
+            icon.setAttribute('style', "display:none")
+            i -= 1
+        }
+
+    }
+</script>
 
 </html>

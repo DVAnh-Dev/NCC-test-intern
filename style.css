@@ -1,20 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    flex-wrap: wrap;
 }
+
 .nav-left {
-    width: 10%;
-    height: 100vh;
+    width: 15%;
+    /* height: 100vh; */
     background-color: black;
 }
 
-.item-left{
+.item-left {
     padding: 5px;
     background-color: black;
     width: 100%;
@@ -23,69 +25,156 @@
     line-height: 38px;
     color: white;
 }
+
 .item-left:hover {
-    background-color:  #5C5C5C ;
+    background-color: #5C5C5C;
 }
-.nav-right{
-    width: 90%;
-    height: 100vh;
+
+.nav-right {
+    width: 85%;
+    /* height: 100vh; */
 }
-.banner{
+
+.banner {
     width: 90%;
-    height: 150px;
     margin: auto;
-    position: relative;
     text-align: center;
 }
-.bg2{
+
+.bg2 {
     background-color: #EFEFEF;
-    padding: 20px 150px;
+    padding: 20px 120px;
 }
-.banner img{
-    height: 100%;
-    position: absolute;
-    right: 45%;
+
+.banner img {
+    height: 150px;
 }
-.content{
+
+.content {
     width: 90%;
-    height: 90%;
     margin: auto;
 }
-.contents{
+
+.contents {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.card{
-    margin: 20px;
+
+.card {
+    margin:20px  10px;
     width: 28%;
-    height: 280px;
     position: relative;
-    margin-top: 30px;
 }
-.card .card-img img{
+
+.card .card-img img {
     position: absolute;
     top: 0;
     width: 100%;
 }
-.card-img{
+
+.card-img {
     width: 100px;
     position: absolute;
 }
-.card p{
+
+.card p {
     text-indent: 100px;
 }
+
 hr {
-    border:1px solid  #5C5C5C ;
+    border: 1px solid #5C5C5C;
 }
-.footer p{
+
+.footer p {
     padding: 30px;
     padding-left: 100px;
 }
-.text2{
+
+.text2 {
     text-indent: 110px;
 
 }
-.margin-t20{
+
+.margin-t20 {
     margin-top: 20px;
+}
+
+.icon {
+    color: white;
+    font-size: 25px;
+    display: none;
+    padding: 10px;
+}
+
+.menu-mobile {
+    margin-top: 50px;
+    display: none;
+
+}
+.footer{
+    margin-top: 142px;
+}
+@media only screen and (max-width: 576px) {
+    .nav-left {
+        width: 100%;
+    }
+
+    .icon {
+        float: right;
+        display: block;
+    }
+
+    .home {
+        width: 20%;
+        float: left;
+    }
+
+    .dp-none {
+        display: none;
+    }
+
+    .nav-right {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .bg2 {
+        padding: 10px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .banner2{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .footer p{
+        padding: 20px;
+        text-align: center;
+    }
+    .container{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .menu-mobile {
+        display: none;
+    }
+    .card {
+        width: 80%;
+    }
+    .container{
+        height: auto;
+    }
+    
 }
